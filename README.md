@@ -1,5 +1,7 @@
 # spring-boot-rest-api
 - 스프링 부트에서 REST API 구현
+- React Front-End 소스
+  (https://github.com/seongjinna/todo-react-app)
 
 ## Getting Started
 - Java version : JDK 8
@@ -30,3 +32,4 @@
 - REST 아키텍처(@RequestMapping, @GetMapping, @RequestBody, @RequestParam @PathVariable 등)을 이용해 테스트 REST API 구현
 - JPA와 Spring DATA JPA 적용
 - JDK 8에서 제공하는 Lambda, Stream 등 문법 연습
+- CORS(Cross-Origin Resources Sharing) 적용
