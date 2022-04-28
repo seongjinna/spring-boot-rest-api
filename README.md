@@ -33,3 +33,4 @@
 - JPA와 Spring DATA JPA 적용
 - JDK 8에서 제공하는 Lambda, Stream 등 문법 연습
 - CORS(Cross-Origin Resources Sharing) 적용
+- Spring Security 적용 및 JWT 인증 로직 구현, 패스워드 암호화 로직 구현 
