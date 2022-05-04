@@ -47,11 +47,11 @@ public class UserController {
                     .username(registeredUser.getUsername())
                     .build();
 
+            // 사용자 정보는 항상 하나이므로 리스트로 만들어야 하는 ResponseDTO를 사용하지 않고 그냥 UserDTO 리턴
             return ResponseEntity.ok(responseUserDTO);
         }
         catch (Exception e) {
-            // 사용자 정보는 항상 하나이므로 리스트로 만들어야 하는 ResponseDTO를 사용하지 않고 그냥 UserDTO 리턴
-
+            // 예외가 나는 경우 bad 리스폰스 리턴
             ResponseDTO responseDTO = ResponseDTO.builder().error(e.getMessage()).build();
             return ResponseEntity
                     .badRequest()
@@ -75,7 +75,7 @@ public class UserController {
                     .token(token)
                     .build();
 
-            return ResponseEntity.ok(responseUserDTO);
+            return ResponseEntity.ok().body(responseUserDTO);
         }
         else {
             ResponseDTO responseDTO = ResponseDTO.builder()
